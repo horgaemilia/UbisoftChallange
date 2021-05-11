@@ -1,0 +1,7 @@
+﻿  GameTest.cpp
+C:\Users\PC\Desktop\Ubisoft Challange\WomXn Develop Programming Challenge - API\WomXn Develop Programming Challenge - API\API\API20201\GameTest\Domain.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\PC\Desktop\Ubisoft Challange\WomXn Develop Programming Challenge - API\WomXn Develop Programming Challenge - API\API\API20201\GameTest\Utils.h(63,116): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PC\Desktop\Ubisoft Challange\WomXn Develop Programming Challenge - API\WomXn Develop Programming Challenge - API\API\API20201\GameTest\Utils.h(73,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  GameTest.vcxproj -> C:\Users\PC\Desktop\Ubisoft Challange\WomXn Develop Programming Challenge - API\WomXn Develop Programming Challenge - API\API\API20201\x64\Debug\GameTest.exe
+  C:\Users\PC\Desktop\Ubisoft Challange\WomXn Develop Programming Challenge - API\WomXn Develop Programming Challenge - API\API\API20201\\GameTest\glut\bin\x64\freeglut.dll
+  1 File(s) copied
