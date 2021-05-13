@@ -25,10 +25,12 @@
     </ClCompile>
     <ClCompile Include="Obstacle.cpp" />
     <ClCompile Include="BasicObject.cpp" />
-    <ClCompile Include="Domain.cpp" />
+    <ClCompile Include="Avatar.cpp" />
     <ClCompile Include="PowerUpBase.cpp" />
     <ClCompile Include="ExtraLife.cpp" />
     <ClCompile Include="Colectible.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="BackgroundAnimation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App\app.h">
@@ -58,13 +60,15 @@
     <ClInclude Include="App\TextureLoader.h">
       <Filter>API</Filter>
     </ClInclude>
-    <ClInclude Include="Domain.h" />
+    <ClInclude Include="Avatar.h" />
     <ClInclude Include="BasicObject.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Obstacle.h" />
     <ClInclude Include="PowerUpBase.h" />
     <ClInclude Include="ExtraLife.h" />
     <ClInclude Include="Colectible.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="BackgroundAnimation.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />

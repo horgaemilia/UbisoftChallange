@@ -19,7 +19,7 @@ enum
 };
 #define gravity_or_incoming_obj_speed  3.0f;
 
-
+//we created a base object which is the interface for all other classes used for the game
 class BaseObject
 {
 protected:

@@ -9,9 +9,11 @@ private:
 public:
 	Obstacle(float x, float y, float height, float width, int speed, CSimpleSprite* sprite);
 	void MoveForward();
+	void SetAnimationSprite();
 	bool DetectCollision(BaseObject* another);
 	void Draw();
 	void Restart();
+	void SetPositionSprite();
 	void Reset(float final_x);
 	~Obstacle();
 };

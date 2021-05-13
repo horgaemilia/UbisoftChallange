@@ -1,5 +1,8 @@
 #pragma once
 #include "BasicObject.h"
+
+//we create this class for the collectible and extra life because they have the same functions and attributes
+//the only difference is the type field
 class ExtraLife_Or_Colectible_Base : public BaseObject
 {
 private:

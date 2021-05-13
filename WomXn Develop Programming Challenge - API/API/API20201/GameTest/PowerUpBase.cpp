@@ -18,7 +18,7 @@ void ExtraLife_Or_Colectible_Base::MoveForward()
     this->x -= gravity_or_incoming_obj_speed;
     this->sprite->SetPosition(this->x, this->y);
 }
-
+//we do not check the collision detection within this class but in the character class
 bool ExtraLife_Or_Colectible_Base::DetectCollision(BaseObject* another)
 {
     return false;
@@ -32,6 +32,7 @@ void ExtraLife_Or_Colectible_Base::Draw()
     }
 }
 
+//we bring back the object properties back to their initial state
 void ExtraLife_Or_Colectible_Base::Restart()
 {
     this->x = initial_position_x;
@@ -41,6 +42,8 @@ void ExtraLife_Or_Colectible_Base::Restart()
 
 void ExtraLife_Or_Colectible_Base::Reset(float final_x)
 {
+    //we randomly reinitialize the objects so it doesn't appear as soon as he gets
+    // out of the map and the frequency is represented by the random_point field 
     if (this->x <= 0)
     {
         //we use srand so we can get a different sequence at each run

@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------
 #include "app\app.h"
 //------------------------------------------------------------------------
-#include "Domain.h"
+#include "Avatar.h"
 #include "Obstacle.h"
 #include "Utils.h"
 //------------------------------------------------------------------------
@@ -207,6 +207,8 @@ void Render()
 	//testSprite->Draw();
 	//testSprite2->Draw();
 	//testSprite3->Draw();
+	UpdateTime();
+	UpdateValues();
 	Draw();
 	//obstacle->Draw();
 	//------------------------------------------------------------------------
@@ -221,11 +223,6 @@ void Render()
 		App::Print(100, 100, "GAME OVER", 255, 255, 255,GLUT_BITMAP_TIMES_ROMAN_24);
 		App::Print(100, 900, "PRESS LEFT ARROW TO RESTART", 255, 255, 255, GLUT_BITMAP_TIMES_ROMAN_24);
 	}
-	std::string message = "Curent Lives: "+std::to_string(myCharacter->GetHealth());
-	const char* msg = message.c_str();
-	App::Print(400, 400,msg, 255, 255, 255, GLUT_BITMAP_TIMES_ROMAN_24);
-	PrintScore();
-	PrintColectibles();
 }
 //------------------------------------------------------------------------
 // Add your shutdown code here. Called when the APP_QUIT_KEY is pressed.
@@ -235,10 +232,17 @@ void Shutdown()
 {	
 	//------------------------------------------------------------------------
 	// Example Sprite Code....
+	UpdateTotalTime();
 	delete ground;
 	delete myCharacter;
 	delete myThirdObstacle;
 	delete mySecondObstacle;
 	delete myObstacle;
+	delete extraLife;
+	delete colectible;
+	delete coin_hud;
+	delete life_hud;
+	delete cloud1_animation;
+	delete cloud2_animation;
 	//------------------------------------------------------------------------
 }

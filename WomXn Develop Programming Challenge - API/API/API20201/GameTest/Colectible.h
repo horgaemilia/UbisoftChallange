@@ -1,6 +1,6 @@
 #pragma once
 #include "PowerUpBase.h"
-
+//collectible class, we have all the functions implemented in the base class
 class Colectible_item : public ExtraLife_Or_Colectible_Base
 {
 public:

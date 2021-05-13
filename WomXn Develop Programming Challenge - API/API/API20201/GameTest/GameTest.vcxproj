@@ -183,9 +183,11 @@
     <ClInclude Include="App\SimpleSound.h" />
     <ClInclude Include="App\SimpleSprite.h" />
     <ClInclude Include="App\TextureLoader.h" />
+    <ClInclude Include="BackgroundAnimation.h" />
     <ClInclude Include="BasicObject.h" />
     <ClInclude Include="Colectible.h" />
-    <ClInclude Include="Domain.h" />
+    <ClInclude Include="Avatar.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="ExtraLife.h" />
     <ClInclude Include="Obstacle.h" />
     <ClInclude Include="PowerUpBase.h" />
@@ -200,11 +202,13 @@
     <ClCompile Include="App\SimpleSound.cpp" />
     <ClCompile Include="App\SimpleSprite.cpp" />
     <ClCompile Include="App\TextureLoader.cpp" />
+    <ClCompile Include="BackgroundAnimation.cpp" />
     <ClCompile Include="BasicObject.cpp" />
     <ClCompile Include="Colectible.cpp" />
-    <ClCompile Include="Domain.cpp">
+    <ClCompile Include="Avatar.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="ExtraLife.cpp" />
     <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="Obstacle.cpp" />
